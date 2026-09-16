@@ -11,56 +11,72 @@
     <style>
     body {
       font-family: 'Michroma', sans-serif;
+      background-image: ;
+    }
+    .item {
+      margin: 6px 0;
+    }
+    #Subtotal, #VAT, #Total_Amount {
+      font-weight: bold;
+      margin-top: 5px;
     }
   </style>
-
- 
-
 </head>
 
 <body>
-    <script type="py" src="main.py"></script>
-
+ 
+    <center>
     <h1>Jerichos The Cartographers Amazing And Complete Notes</h1>
-
-    <h3>NOTE TO BUYERS: Prices are determined based on the availabilty of the notes.</h3>
+    <h3>NOTE TO BUYERS: Prices are determined based on the availability of the notes.</h3>
 
     <h2>Subjects:</h2>
     <br>
 
     <div class="item">
-        <input type="checkbox" id="math"> Math Notes - ₱150.00
+        <input type="checkbox" id="math" value="150.00"> Math Notes - ₱150.00
     </div>
     <div class="item">
-        <input type="checkbox" id="ss"> SS Notes - ₱150.00
+        <input type="checkbox" id="ss" value="150.00"> SS Notes - ₱150.00
     </div>
     <div class="item">
-        <input type="checkbox" id="science"> Science Notes - ₱100.00
+        <input type="checkbox" id="science" value="100.00"> Science Notes - ₱100.00
     </div>
     <div class="item">
-        <input type="checkbox" id="english"> English Notes - ₱100.00
+        <input type="checkbox" id="english" value="100.00"> English Notes - ₱100.00
     </div>
     <div class="item">
-        <input type="checkbox" id="filipino"> Filipino Notes - ₱150.00
+        <input type="checkbox" id="filipino" value="150.00"> Filipino Notes - ₱150.00
     </div>
     <div class="item">
-        <input type="checkbox" id="ve"> VE Notes - ₱150.00
+        <input type="checkbox" id="ve" value="150.00"> VE Notes - ₱150.00
     </div>
     <div class="item">
-        <input type="checkbox" id="ict"> ICT Notes - ₱100.00
+        <input type="checkbox" id="ict" value="100.00"> ICT Notes - ₱100.00
     </div>
     <div class="item">
-        <input type="checkbox" id="cat"> CAR Notes - ₱50.00
+        <input type="checkbox" id="cat" value="50.00"> CAT Notes - ₱50.00
     </div>
     <div class="item">
-        <input type="checkbox" id="music"> Music Notes - ₱50.00
+        <input type="checkbox" id="music" value="50.00"> Music Notes - ₱50.00
     </div>
 
     <br><br>
 
-    <button type="button" py-click="calculate">Calculate the price you pay for not taking your own notes</button>
+    <button type="button" py-click="create_order">Calculate the price you pay for not taking your own notes</button>
 
-    <div id="output"></div>
+    <br><br>
+
+    <div id="Subtotal"></div>
+    <div id="VAT"></div>
+    <div id="Total_Amount"></div>
+
+    <br><br>
+
+    <script type="py" src="main.py"></script>
+
+    </center>
+
+
 
 </body>
 </html>
